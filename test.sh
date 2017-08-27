@@ -1,10 +1,11 @@
-# /bin/bash
-# step=1
+#!/bin/bash
+
+
 
 # for((i = 0; i < 60; i=(i+setp))); do
 # {
-# 	echo `date`
-# 	sleep $step
+#     echo `date`
+#     sleep $step
 # }
 # done
 
@@ -12,7 +13,7 @@
 # echo `date`
 # for ((i=0;i<5;i++));do
 # {
-# 	sleep 3;echo 1>>aa && echo ”done!”
+#     sleep 3;echo 1>>aa && echo ”done!”
 # } &
 
 # done
@@ -22,5 +23,11 @@
 
 # # rm aa
 # exit 0
-cd '/Users/wen/Documents/OneDrive/工作'
-pwd
+
+thread_num = 20
+mkfifo tmp
+mkfifo 9<>tmp
+
+for((i=0;i<$thread_num;i++))
+do
+    echo -ne "\n"

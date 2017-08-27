@@ -1,0 +1,20 @@
+^[[32m -=done!=- ^[[0m
+cmd line:4
+xxx
+Zmf Intialize API 2 VERSION:c46f049(170724)
+2017-08-27 13:32:28.111 DEBUG main.cpp:255 [] - .........DEV_ID: UnknownId_4
+2017-08-27 13:32:28.111 DEBUG main.cpp:256 [] - .........APPKEY: 6c06d1b0d9015e47ec144097
+2017-08-27 13:32:28.111 DEBUG main.cpp:257 [] - .........UserID: 4
+2017-08-27 13:32:28.112 DEBUG main.cpp:258 [] - .........Passwd: 000000
+2017-08-27 13:32:28.112 DEBUG main.cpp:259 [] - ........ConfPwd: 123456
+WARNING: no real random source present!
+register codecType com.juphoon.VP8.encoder
+register codecType com.juphoon.VP8.decoder
+LogCreateX use log/000000/mtc20170827_133228_112.log^M
+LogAppendFile 0 log/000000/mtc20170827_133228_112.log count 1^M
+Open file<log/000000/mme.ini> failed.Open file<log/000000/mdm.ini> failed.{"Name":"init","Result":"OK","Step":0}
+
+Evt:DeviceStarting 2 ConfClient
+{"Name":"login","Result":"OK","Step":1}
+
+2017-08-27 13:32:28.943 DEBUG NotificationCenter.cpp:185 [4] - .........Mtc_ConfCreateEx: {"MtcConfCapacityKey":512}
