@@ -2,9 +2,11 @@
 
 success_num=0
 fail_num=0
+thread_num=5
+n=5
 
 function read_file(){
-#todo read file
+# todo(wlz) read file
     for line in `cat 1.txt`
     do
         if [ `echo ${line} | grep -E "10[0-9]{6}"` ];then
@@ -16,13 +18,16 @@ function read_file(){
 }
 
 function do_work() {
+#   todo(wlz)count success/fail number have problem
     read_file
     if [ $? -eq 1 ];then
         success_num=`expr ${success_num} + 1`
         echo 'success create meeting' ${success_num}
+        echo 'success' >>success.txt
     else
         fail_num=`expr ${fail_num} + 1`
         echo 'fail create meeting' ${fail_num}
+        echo 'fail' >>fail.txt
     fi
 }
 
@@ -31,12 +36,12 @@ start_time=`date`                  #定义脚本运行的开始时间
 [ -e /tmp/fd1 ] || mkfifo /tmp/fd1 #创建有名管道
 exec 3<>/tmp/fd1                   #创建文件描述符，以可读（<）可写（>）的方式关联管道文件，这时候文件描述符3就有了有名管道文件的所有特性
 rm -rf /tmp/fd1                    #关联后的文件描述符拥有管道文件的所有特性,所以这时候管道文件可以删除，我们留下文件描述符来用就可以了
-for ((i=1;i<=4;i++))               #控制进程数
+for ((i=1;i<=thread_num;i++))               #控制进程数
 do
         echo >&3                   #&3代表引用文件描述符3，这条命令代表往管道里面放入了一个"令牌"
 done
 
-for ((i=1;i<=4;i++))
+for ((i=1;i<=n;i++))
 do
 read -u3                           #代表从管道中读取一个令牌
 {
