@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #！/bin/bash
 
 success_num=0
@@ -34,7 +35,7 @@ starttime=`date +"%Y-%m-%d %H:%M:%S"`
 sys_time=`date -d "$starttime" +%s`
 
 # todo main
-
+# for(i=0;i<set_num;i++);
 # ./create.sh $1 $2| tee 1.txt| ./killall.sh $1
 ./create.sh $1 $2| tee 1.txt| ./killall.sh $1
 do_work
