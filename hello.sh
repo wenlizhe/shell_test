@@ -1,6 +1,14 @@
 #!/bin/bash
 
-starttime=`date +"%Y-%m-%d %H:%M:%S"`
-sys_time=`date -d "$starttime" +%s`
+flag=0
+for((i=0;i<5;i++))
+do
+{
+#    echo "hello world" $flag
+    flag=`expr ${flag} + 1`
+    echo "hello world" $flag
+}
+done
 
-echo $sys_time
+
+
