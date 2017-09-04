@@ -66,12 +66,6 @@ for ((i=1;i<=n;i++))
 do
 read -u3                           #代表从管道中读取一个令牌
 {
-#        ./create.sh 4 |tee 1.txt |sleep 2 |exit |do_work
-#        ./create.sh 4 |tee 1.txt |exit |do_work
-#        ./create.sh 6 |tee 1.txt |exit |do_work
-#        ./create.sh 7 |tee 1.txt |exit |do_work
-#        ./create.sh 8 |tee 1.txt |exit |do_work
-#       ./create.sh 4 |tee ./text/1.txt |sleep 2 |exit &&do_work
 
 # todo main function
 #        ./create.sh 4 |tee ./text/1.txt |sleep 2 |exit && do_work ./text/1.txt
