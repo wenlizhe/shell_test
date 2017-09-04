@@ -1,14 +1,12 @@
-#!/bin/bash
+#！/bin/bash
 
-Njob=20    # 作业数目
-Nproc=5    # 可同时运行的最大作业数
-
+starttime=`date`
 function read_file(){
 # todo(wlz): read file has big peoblem!!!!!!
-    for line in `cat $1`
+    for line in `cat 1.txt`
     do
 #        if [ `echo ${line} | grep -E "10[0-9]{6}"` ];then
-        if [ `echo ${line} | grep -E "[0-9]{5}"` ];then
+        if [ `echo ${line} | grep -E "MtcConfJoinOkNotification"` ];then
             echo "meeting id" ${line} >>./text/7.txt
 #            echo $1
             return 1
@@ -38,7 +36,7 @@ function count_result(){
 }
 
 function do_work() {
-    read_file $1
+    read_file
     if [ $? -eq 1 ];then
         success_num=`expr ${success_num} + 1`
 #        echo 'success create meeting' ${success_num}
@@ -49,52 +47,22 @@ function do_work() {
         echo 'fail' >>./text/fail.txt
     fi
 }
-
-function CMD {        # 测试命令, 随机等待几秒钟
-#	n=$((RANDOM % 5 + 1))
-#	echo "Job $1 Ijob $2 sleeping for $n seconds ..."
-#	sleep $n
-#	echo "Job $1 Ijob $2 exiting ..."
-    ./hello.sh |tee ./text/1.txt && do_work ./text/1.txt
-}
-function PushQue {    # 将PID压入队列
-	Que="$Que $1"
-	Nrun=$(($Nrun+1))
-}
-function GenQue {     # 更新队列
-	OldQue=$Que
-	Que=""; Nrun=0
-	for PID in $OldQue; do
-		if [[ -d /proc/$PID ]]; then
-			PushQue $PID
-		fi
-	done
-}
-function ChkQue {     # 检查队列
-	OldQue=$Que
-	for PID in $OldQue; do
-		if [[ ! -d /proc/$PID ]] ; then
-			GenQue; break
-		fi
-	done
-}
-echo "" | tee ./text/1.txt ./text/2.txt ./text/3.txt ./text/4.txt ./text/5.txt ./text/7.txt ./text/success.txt ./text/fail.txt
-start_time=`date`                  #定义脚本运行的开始时间
-for((i=1; i<=$Njob; i++)); do
-	CMD $i &
-	PID=$!
-	PushQue $PID
-	while [[ $Nrun -ge $Nproc ]]; do
-		ChkQue
-		sleep 1
-	done
+# todo main
+# for(i=0;i<set_num;i++);
+# ./create.sh $1 $2| tee 1.txt| ./killall.sh $1
+#./create.sh $1 $2| tee 1.txt| ./killall.sh $1
+#do_work
+for((i=0;i<50;i++))
+do
+{
+    ./create.sh 4 | sleep 2| exit&&do_work
+} &
 done
 wait
 
-
+echo 'starttime' ${starttime}
+echo 'endtime' `date`
 count_result
-stop_time=`date`                   #定义脚本运行的结束时间
 
-#echo "TIME:`expr $stop_time - $start_time`"
-echo ${start_time}
-echo ${stop_time}
+echo "" >1.txt
+exit 0

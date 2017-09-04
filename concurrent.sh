@@ -3,7 +3,7 @@
 success_num=0
 fail_num=0
 thread_num=20
-n=20
+n=10
 
 function read_file(){
 # todo(wlz): read file has big peoblem!!!!!!
@@ -79,9 +79,9 @@ read -u3                           #代表从管道中读取一个令牌
 #        ./create.sh 6 |tee ./text/3.txt |sleep 2 |exit && do_work ./text/3.txt
 #        ./create.sh 7 |tee ./text/4.txt |sleep 2 |exit && do_work ./text/4.txt
 #        ./create.sh 8 |tee ./text/5.txt |sleep 2 |exit && do_work ./text/5.txt
-for((i=0;i<20;i++))
+for((i=0;i<2;i++))
 do
-#        sleep 1
+        sleep 1
         ./hello.sh |tee ./text/1.txt && do_work ./text/1.txt
 
 #        ./hello.sh |tee ./text/2.txt && do_work ./text/2.txt
@@ -94,8 +94,9 @@ done
 }&
 done
 wait
-count_result
 stop_time=`date`                   #定义脚本运行的结束时间
+count_result
+
 
 #echo "TIME:`expr $stop_time - $start_time`"
 echo ${start_time}
