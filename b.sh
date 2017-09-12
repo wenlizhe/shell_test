@@ -120,4 +120,3 @@ count_result
 
 echo "" >1.txt ./text/success.txt ./text/fail.txt ./text/meet.txt
 exit 0
-

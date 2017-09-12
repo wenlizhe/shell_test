@@ -7,7 +7,7 @@ n=10
 function read_file(){
     for line in `cat 1.txt`
     do
-        if [ `echo $line | grep -E "MtcConfJoinOkNotification"` ];then
+        if [ `echo ${line} | grep -E "MtcConfJoinOkNotification"` ];then
             # ./killall.sh $1
             echo  ${line} >>./text/meet.txt
             ./join.sh 3 ${line} 4
