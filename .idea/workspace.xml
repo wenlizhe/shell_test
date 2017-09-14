@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e351f41-005e-42ec-86bd-096f1990c4dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text/create.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text/join.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/text/7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/text/meet.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.txt" afterPath="$PROJECT_DIR$/1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.sh" afterPath="$PROJECT_DIR$/a.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/b.sh" afterPath="$PROJECT_DIR$/b.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/concurrent.sh" afterPath="$PROJECT_DIR$/concurrent.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello.sh" afterPath="$PROJECT_DIR$/hello.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/21.sh" afterPath="$PROJECT_DIR$/21.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c.sh" afterPath="$PROJECT_DIR$/c.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.sh" afterPath="$PROJECT_DIR$/demo.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/1.txt" afterPath="$PROJECT_DIR$/text/1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/fail.txt" afterPath="$PROJECT_DIR$/text/fail.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/success.txt" afterPath="$PROJECT_DIR$/text/success.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text/create.txt" afterPath="$PROJECT_DIR$/text/create.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/concurrent.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1669">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +55,8 @@
       <file leaf-file-name="demo.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="171">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -82,8 +75,18 @@
       <file leaf-file-name="c.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/c.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="475">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/create.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -117,14 +120,16 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hello2.sh" />
         <option value="$PROJECT_DIR$/text/7.txt" />
-        <option value="$PROJECT_DIR$/1.txt" />
-        <option value="$PROJECT_DIR$/demo.sh" />
         <option value="$PROJECT_DIR$/b.sh" />
         <option value="$PROJECT_DIR$/a.sh" />
         <option value="$PROJECT_DIR$/hello.sh" />
         <option value="$PROJECT_DIR$/text/success.txt" />
         <option value="$PROJECT_DIR$/text/fail.txt" />
         <option value="$PROJECT_DIR$/concurrent.sh" />
+        <option value="$PROJECT_DIR$/disk_space.sh" />
+        <option value="$PROJECT_DIR$/create.sh" />
+        <option value="$PROJECT_DIR$/1.txt" />
+        <option value="$PROJECT_DIR$/demo.sh" />
         <option value="$PROJECT_DIR$/c.sh" />
       </list>
     </option>
@@ -136,9 +141,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="681" />
+    <option name="x" value="177" />
     <option name="y" value="23" />
-    <option name="width" value="759" />
+    <option name="width" value="1263" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -182,11 +187,6 @@
               <item name="shell_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="shell_test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="shell_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shell_test" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -217,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.c.sh">
+  <component name="RunManager" selected="Bash.demo.sh">
     <configuration name="a.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
@@ -268,31 +268,31 @@
       <module name="reptile_test" />
       <envs />
     </configuration>
-    <configuration name="hello.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+    <configuration name="disk_space.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello.sh" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/disk_space.sh" />
       <option name="PARAMETERS" value="" />
       <module name="reptile_test" />
       <envs />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Bash.concurrent.sh" />
-      <item index="1" class="java.lang.String" itemvalue="Bash.hello.sh" />
-      <item index="2" class="java.lang.String" itemvalue="Bash.b.sh" />
-      <item index="3" class="java.lang.String" itemvalue="Bash.a.sh" />
-      <item index="4" class="java.lang.String" itemvalue="Bash.demo.sh" />
-      <item index="5" class="java.lang.String" itemvalue="Bash.c.sh" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.b.sh" />
+      <item index="2" class="java.lang.String" itemvalue="Bash.a.sh" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.demo.sh" />
+      <item index="4" class="java.lang.String" itemvalue="Bash.c.sh" />
+      <item index="5" class="java.lang.String" itemvalue="Bash.disk_space.sh" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Bash.c.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.demo.sh" />
-        <item index="2" class="java.lang.String" itemvalue="Bash.a.sh" />
-        <item index="3" class="java.lang.String" itemvalue="Bash.b.sh" />
-        <item index="4" class="java.lang.String" itemvalue="Bash.hello.sh" />
+        <item index="0" class="java.lang.String" itemvalue="Bash.demo.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.c.sh" />
+        <item index="2" class="java.lang.String" itemvalue="Bash.disk_space.sh" />
+        <item index="3" class="java.lang.String" itemvalue="Bash.a.sh" />
+        <item index="4" class="java.lang.String" itemvalue="Bash.b.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -315,9 +315,9 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31094527" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31094527" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633238" sideWeight="0.48555955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -366,21 +366,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/text/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text/fail.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -638,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/text/create.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -709,6 +687,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/concurrent.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1669">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disk_space.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/b.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -717,26 +711,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.sh">
+    <entry file="file://$PROJECT_DIR$/create.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="475">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/concurrent.sh">
+    <entry file="file://$PROJECT_DIR$/1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1669">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="490">
+          <caret line="4509" column="0" lean-forward="false" selection-start-line="4509" selection-start-column="0" selection-end-line="4509" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="475">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>
