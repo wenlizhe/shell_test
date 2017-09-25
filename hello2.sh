@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
+./hello.sh $1 >1.txt
 
-echo "10123456"
+

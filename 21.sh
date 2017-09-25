@@ -1,7 +1,7 @@
 #!/usr/bin/expect  
 set timeout 5 
-spawn ssh cube@112.33.14.21 -p 30022
+spawn ssh root@112.33.14.21 -p 30022
 expect "*password*"
-send "Juphoon963.\r"
+send "Yinshipin1234_\r"
 interact
 
