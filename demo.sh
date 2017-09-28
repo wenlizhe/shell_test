@@ -1,7 +1,8 @@
 #! /bin/bash
 # 并发创建会议脚本
 #
-#Author: wenlizhe
+# Author: wenlizhe
+#
 t=5      # 运行时间，调试默认5s
 num=$1    # 并发次数，要乘以服务器数量
 
@@ -21,6 +22,36 @@ function demo(){
     done
     wait
 }
+
+
+# 利用管道进行多线程控制，调用创建会议脚本
+function main(){
+    [ -e ./fd1 ] || mkfifo ./fd1
+    exec 3<> ./fd1
+    rm -rf ./fd1
+    for i in `seq 1 2`;
+    do
+        echo >&3
+    done
+    for((i=0;i<num;i++))
+    do
+        read -u3
+        {
+            ./hello.sh
+#            ./create.sh 4
+#            ./create.sh 5
+#            ./create.sh 6
+#            ./create.sh 7
+#            ./create.sh 8
+#            sleep 1
+            echo >&3
+        }&
+    done
+    wait
+    exec 3<&-
+    exec 3>&-
+}
+
 
 # 计算运行时间差
 function getTiming(){

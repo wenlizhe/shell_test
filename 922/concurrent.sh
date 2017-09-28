@@ -1,5 +1,5 @@
 #! /bin/bash
-# 计算创建会议响应时间脚本
+# 并发创建会议脚本
 #
 # Author: wenlizhe
 # Last Changed:2017-9-28
@@ -7,28 +7,6 @@
 
 t=5      # 运行时间，调试默认5s
 num=5    # 每次并发进程数，根据自己服务器性能设置，要乘以服务器数量
-
-
-# 计算运行时间差
-function getTiming(){
-    start=$1
-    end=$2
-
-    start_s=`echo ${start} | cut -d '.' -f 1`
-    start_ns=`echo ${start} | cut -d '.' -f 2`
-    end_s=`echo ${end} | cut -d '.' -f 1`
-    end_ns=`echo ${end} | cut -d '.' -f 2`
-
-    time_micro=$(( (10#$end_s-10#$start_s)*1000000 + (10#$end_ns/1000 - 10#$start_ns/1000) ))
-
-    time_ms=`expr ${time_micro}/1000  | bc `
-    sum=`expr ${t} \* ${num}`
-    ave=`echo "scale=2; ${time_ms} / ${sum}" |bc`
-    echo "Run Times: ${sum}"
-    echo "Average Time: $ave ms"
-    echo "Total Time: $time_ms ms"
-    echo "$time_ms ms"
-}
 
 
 # 利用管道进行多线程控制，调用创建会议脚本
@@ -59,13 +37,10 @@ function main(){
     exec 3>&-
 }
 
-#begin_time=`date +%s.%N`
 for((j=0;j<t;j++))
 do
-#    demo >1.txt
-    main
+    main >1.txt
 #    sleep 1
 done
-#end_time=`date +%s.%N`
-#getTiming ${begin_time} ${end_time}
+
 exit 0
