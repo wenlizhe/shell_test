@@ -1,40 +1,27 @@
 #! /bin/bash
+# 并发创建会议脚本
+#
+#Author: wenlizhe
 
 
-n=50              # 执行次数
-MeetingNum=$1    # 测试服务器编号
+t=5      # 运行时间，调试默认5s
+num=5    # 每次并发进程数，根据自己服务器性能设置，要乘以服务器数量
 
 
-function read_create_log(){
-
-    for line in `cat $1`
+# todo(17-9-26)wlz:较为简陋，有空用管道实现
+function demo(){
+    for((i=0;i<num;i++))
     do
-        if [ `echo ${line} | grep -E "10[0-9]{6}"` ];then
-#        if [ `echo ${line} | grep -E "[0-9].*"` ];then
-            echo ${line} >>create.log
-            return 1
-        fi
+   {
+        ./create.sh 4
+       # ./create.sh 5
+       # ./create.sh 6
+       # ./create.sh 7
+       # ./create.sh 8
+     #   sleep 1
+    } &
     done
-    return 0
-}
-
-# 统计创建成功率
-function count_create_result(){
-    success_num=0    # 成功次数
-    fail_num=0       # 失败次数
-    for line in `cat create.log`
-    do
-        if [ `echo ${line} | grep -E "[0-9]{5}"` ];then
-            success_num=`expr ${success_num} + 1`
-        else
-            fail_num=`expr ${fail_num} + 1`
-        fi
-    done
-    sum=`expr ${success_num} + ${fail_num}`
-    echo "Success:"${success_num}
-    echo "Fail:"${fail_num}
-#    echo 'Success Rate:' `awk 'BEGIN{printf "%.2f%\n",(`${success_num}`/`${sum}`)*100}'`
-    return 0
+    wait
 }
 
 # 计算运行时间差
@@ -48,28 +35,52 @@ function getTiming(){
     end_ns=`echo ${end} | cut -d '.' -f 2`
 
     time_micro=$(( (10#$end_s-10#$start_s)*1000000 + (10#$end_ns/1000 - 10#$start_ns/1000) ))
-    time_ms=`expr ${time_micro}/1000  | bc `
 
-#    echo "$time_micro microseconds"
+    time_ms=`expr ${time_micro}/1000  | bc `
+    sum=`expr ${t} \* ${num}`
+    ave=`echo "scale=2; ${time_ms} / ${sum}" |bc`
+    echo "Run Times: ${sum}"
+    echo "Average Time: $ave ms"
+    echo "Total Time: $time_ms ms"
     echo "$time_ms ms"
 }
 
 
-function do_work(){
-
-    for((i=0;i<n;i++))
+function main(){
+    [ -e ./fd1 ] || mkfifo ./fd1
+    exec 3<> ./fd1
+    rm -rf ./fd1
+    for i in `seq 1 2`;
     do
-#        ./create.sh |tee 1.txt |sleep 2 |exit && read_create_log 1.txt
-        ./hello.sh |tee 1.txt && read_create_log 1.txt
+        echo >&3
     done
-
+    for((i=0;i<num;i++))
+    do
+        read -u3
+        {
+            ./hello.sh
+#            ./create.sh 4
+#            ./create.sh 5
+#            ./create.sh 6
+#            ./create.sh 7
+#            ./create.sh 8
+#            sleep 1
+            echo >&3
+        }&
+    done
+    wait
+    exec 3<&-
+    exec 3>&-
 }
 
-# main
-echo "" | tee 1.txt create.log
-begin_time=`date +%s.%N`
-do_work
-end_time=`date +%s.%N`
-count_create_result
-getTiming ${begin_time} ${end_time}
+#begin_time=`date +%s.%N`
+for((j=0;j<t;j++))
+do
+#    demo >1.txt
+    main
+#    sleep 1
+done
+#end_time=`date +%s.%N`
+
+#getTiming ${begin_time} ${end_time}
 exit 0

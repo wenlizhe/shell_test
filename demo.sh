@@ -1,21 +1,22 @@
 #! /bin/bash
-
-
-t=60     # 运行时间，默认60s
+# 并发创建会议脚本
+#
+#Author: wenlizhe
+t=5      # 运行时间，调试默认5s
 num=$1    # 并发次数，要乘以服务器数量
 
-# todo main
 
+# todo(17-9-26)wlz:较为简陋，有空用管道实现
 function demo(){
     for((i=0;i<num;i++))
     do
    {
         ./create.sh 4
-        ./create.sh 5
-        ./create.sh 6
-        ./create.sh 7
-#        ./create.sh 8
-        sleep 1
+       # ./create.sh 5
+       # ./create.sh 6
+       # ./create.sh 7
+       # ./create.sh 8
+     #   sleep 1
     } &
     done
     wait
@@ -34,16 +35,15 @@ function getTiming(){
     time_micro=$(( (10#$end_s-10#$start_s)*1000000 + (10#$end_ns/1000 - 10#$start_ns/1000) ))
     time_ms=`expr ${time_micro}/1000  | bc `
 
-    echo "$time_micro microseconds"
     echo "$time_ms ms"
 }
 
 
 begin_time=`date +%s.%N`
-for((n=0;n<t;n++))
+for((j=1;j<=t;j++))
 do
-#    sleep 1
-    demo
+ #   sleep 1
+    demo >1.txt
 done
 end_time=`date +%s.%N`
 
