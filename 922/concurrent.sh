@@ -22,13 +22,11 @@ function main(){
     do
         read -u3
         {
-            ./hello.sh
-#            ./create.sh 4
+            ./create.sh 4
 #            ./create.sh 5
 #            ./create.sh 6
 #            ./create.sh 7
 #            ./create.sh 8
-#            sleep 1
             echo >&3
         }&
     done
@@ -40,7 +38,7 @@ function main(){
 for((j=0;j<t;j++))
 do
     main >1.txt
-#    sleep 1
+    sleep 1
 done
 
 exit 0

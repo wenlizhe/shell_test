@@ -1,4 +1,4 @@
-ENV='http:192.168.5.9:8080'
+ENV='http:192.168.5.21:8080'
 MEMBERS=1
 MNO=2
 
@@ -39,8 +39,7 @@ fi
 
 join_meeting() {
     mkdir log/$1
-    PASSWORD="123456"
-    ./ConfClient.exe -U $USER -P $PASSWORD -R $ENV -c $MNO -f jsm.svc -d log/$1 $1 2>&1 &
+    ./ConfClient.exe -R $ENV -c $MNO -f jsm.svc -d log/$1 $1 2>&1 &
 }
 
 dump_param
