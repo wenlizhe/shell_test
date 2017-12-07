@@ -56,7 +56,7 @@ for((i=0;i<n;i++))
 do
 #        sleep 1
 #        ./hello.sh| tee ./text/1.txt &&do_work ./text/1.txt
-        ./create.sh ${MeetingNum} |tee ./text/1.txt |sleep 2 |exit && do_work ./text/1.txt
+        create.sh ${MeetingNum} |tee ./text/1.txt |sleep 2 |exit && do_work ./text/1.txt
 done
 
 stop_time=`date`                   # 定义脚本运行的结束时间

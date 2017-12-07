@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e351f41-005e-42ec-86bd-096f1990c4dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/1.txt" afterPath="$PROJECT_DIR$/1.txt" />
+      <change beforePath="$PROJECT_DIR$/178.sh" afterPath="$PROJECT_DIR$/login/178.sh" />
+      <change beforePath="$PROJECT_DIR$/21.sh" afterPath="$PROJECT_DIR$/login/21.sh" />
+      <change beforePath="$PROJECT_DIR$/210.sh" afterPath="$PROJECT_DIR$/login/210.sh" />
+      <change beforePath="$PROJECT_DIR$/211.sh" afterPath="$PROJECT_DIR$/login/211.sh" />
+      <change beforePath="$PROJECT_DIR$/4.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/a.sh" afterPath="$PROJECT_DIR$/bak/others/a.sh" />
+      <change beforePath="$PROJECT_DIR$/ali.sh" afterPath="$PROJECT_DIR$/login/ali.sh" />
+      <change beforePath="$PROJECT_DIR$/b.sh" afterPath="$PROJECT_DIR$/bak/others/b.sh" />
+      <change beforePath="$PROJECT_DIR$/c.sh" afterPath="$PROJECT_DIR$/bak/others/c.sh" />
+      <change beforePath="$PROJECT_DIR$/concurrent.sh" afterPath="$PROJECT_DIR$/bak/others/concurrent.sh" />
+      <change beforePath="$PROJECT_DIR$/create.sh" afterPath="$PROJECT_DIR$/bak/others/create.sh" />
+      <change beforePath="$PROJECT_DIR$/demo.sh" afterPath="$PROJECT_DIR$/bak/others/demo.sh" />
+      <change beforePath="$PROJECT_DIR$/disk_space.sh" afterPath="$PROJECT_DIR$/bak/others/disk_space.sh" />
+      <change beforePath="$PROJECT_DIR$/file.sh" afterPath="$PROJECT_DIR$/bak/others/file.sh" />
+      <change beforePath="$PROJECT_DIR$/hello.sh" afterPath="$PROJECT_DIR$/bak/others/hello.sh" />
+      <change beforePath="$PROJECT_DIR$/hello2.sh" afterPath="$PROJECT_DIR$/bak/others/hello2.sh" />
+      <change beforePath="$PROJECT_DIR$/qcloud.sh" afterPath="$PROJECT_DIR$/login/qcloud.sh" />
+      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change beforePath="$PROJECT_DIR$/test.sh" afterPath="$PROJECT_DIR$/test.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +36,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="concurrent.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/922/concurrent.sh">
+      <file leaf-file-name="c.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bak/others/c.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -26,8 +46,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="join_10000.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/922/join_10000.sh">
+      <file leaf-file-name="b.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bak/others/b.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -36,11 +56,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_10000.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/922/create_10000.sh">
+      <file leaf-file-name="test.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -89,17 +129,14 @@
         <option value="$PROJECT_DIR$/text/fail.txt" />
         <option value="$PROJECT_DIR$/concurrent.sh" />
         <option value="$PROJECT_DIR$/create.sh" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/c.sh" />
         <option value="$PROJECT_DIR$/922/create.log" />
         <option value="$PROJECT_DIR$/hello2.sh" />
-        <option value="$PROJECT_DIR$/1.txt" />
         <option value="$PROJECT_DIR$/disk_space.sh" />
         <option value="$PROJECT_DIR$/922/1.txt" />
         <option value="$PROJECT_DIR$/hello.sh" />
         <option value="$PROJECT_DIR$/922/t.sh" />
         <option value="$PROJECT_DIR$/bak/others/create_10000.sh" />
-        <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/demo.sh" />
         <option value="$PROJECT_DIR$/922/create_10000.sh" />
         <option value="$PROJECT_DIR$/code/create.sh" />
@@ -107,6 +144,10 @@
         <option value="$PROJECT_DIR$/922/performance_test.sh" />
         <option value="$PROJECT_DIR$/922/concurrent.sh" />
         <option value="$PROJECT_DIR$/922/join_10000.sh" />
+        <option value="$PROJECT_DIR$/bak/b.sh" />
+        <option value="$PROJECT_DIR$/test.sh" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/1.txt" />
       </list>
     </option>
   </component>
@@ -117,9 +158,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -153,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,34 +201,30 @@
               <item name="shell_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="shell_test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="shell_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shell_test" type="462c0819:PsiDirectoryNode" />
-              <item name="922" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path" value="E:/Program Files/nodejs/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bak/others" />
-      <recent name="$PROJECT_DIR$/text" />
-      <recent name="$PROJECT_DIR$/code" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bak" />
       <recent name="$PROJECT_DIR$/922" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bak/others" />
+      <recent name="$PROJECT_DIR$/bak" />
+      <recent name="$PROJECT_DIR$/login" />
+      <recent name="$PROJECT_DIR$/text" />
+      <recent name="$PROJECT_DIR$/code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -202,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.create_10000.sh">
+  <component name="RunManager" selected="Bash.concurrent.sh">
     <configuration name="concurrent.sh" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -265,24 +302,18 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Bash.concurrent.sh" />
-      <item index="1" class="java.lang.String" itemvalue="Bash.hello2.sh" />
-      <item index="2" class="java.lang.String" itemvalue="Bash.create_10000.sh" />
-      <item index="3" class="java.lang.String" itemvalue="Bash.t.sh" />
-      <item index="4" class="java.lang.String" itemvalue="Bash.demo.sh" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.create_10000.sh" />
+      <item index="2" class="java.lang.String" itemvalue="Bash.demo.sh" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.hello2.sh" />
+      <item index="4" class="java.lang.String" itemvalue="Bash.t.sh" />
       <item index="5" class="java.lang.String" itemvalue="Bash.test.sh" />
     </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Bash.create_10000.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.test.sh" />
-        <item index="2" class="java.lang.String" itemvalue="Bash.demo.sh" />
-        <item index="3" class="java.lang.String" itemvalue="Bash.t.sh" />
-        <item index="4" class="java.lang.String" itemvalue="Bash.hello2.sh" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -296,27 +327,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15759312" sideWeight="0.48555955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1661891" sideWeight="0.48555955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31094527" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19627507" sideWeight="0.5144404" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -377,16 +409,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/concurrent.sh" />
     <entry file="file://$PROJECT_DIR$/text/2.txt" />
     <entry file="file://$PROJECT_DIR$/text/success.txt" />
-    <entry file="file://$PROJECT_DIR$/hello.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/hello.sh" />
     <entry file="file://$PROJECT_DIR$/text/fail.txt" />
-    <entry file="file://$PROJECT_DIR$/a.sh" />
-    <entry file="file://$PROJECT_DIR$/hello.sh" />
-    <entry file="file://$PROJECT_DIR$/21.sh" />
-    <entry file="file://$PROJECT_DIR$/a.sh" />
-    <entry file="file://$PROJECT_DIR$/21.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/a.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/hello.sh" />
+    <entry file="file://$PROJECT_DIR$/login/21.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/a.sh" />
+    <entry file="file://$PROJECT_DIR$/login/21.sh" />
     <entry file="file://$PROJECT_DIR$/2.txt" />
     <entry file="file://$PROJECT_DIR$/fail.txt" />
     <entry file="file://$PROJECT_DIR$/README.md" />
@@ -394,57 +425,96 @@
     <entry file="file://$PROJECT_DIR$/text/3.txt" />
     <entry file="file://$PROJECT_DIR$/text/2.txt" />
     <entry file="file://$PROJECT_DIR$/text/5.txt" />
-    <entry file="file://$PROJECT_DIR$/4.sh" />
     <entry file="file://$PROJECT_DIR$/text/create.txt" />
     <entry file="file://$PROJECT_DIR$/text/1.txt" />
     <entry file="file://$PROJECT_DIR$/text/join.txt" />
     <entry file="file://$PROJECT_DIR$/text/success.txt" />
     <entry file="file://$PROJECT_DIR$/text/fail.txt" />
-    <entry file="file://$PROJECT_DIR$/create.sh" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/bak/others/create.sh" />
     <entry file="file://$PROJECT_DIR$/out.txt" />
     <entry file="file://$PROJECT_DIR$/file.txt" />
     <entry file="file://$PROJECT_DIR$/temp.txt" />
-    <entry file="file://$PROJECT_DIR$/hello2.sh" />
-    <entry file="file://$PROJECT_DIR$/disk_space.sh" />
-    <entry file="file://$PROJECT_DIR$/hello.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/hello2.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/disk_space.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/hello.sh" />
     <entry file="file://$PROJECT_DIR$/922/hello.sh" />
     <entry file="file://$PROJECT_DIR$/bak/others/create_10000.sh" />
-    <entry file="file://$PROJECT_DIR$/concurrent.sh" />
-    <entry file="file://$PROJECT_DIR$/demo.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/concurrent.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/demo.sh" />
     <entry file="file://$PROJECT_DIR$/922/1.txt" />
-    <entry file="file://$PROJECT_DIR$/test.sh" />
-    <entry file="file://$PROJECT_DIR$/b.sh" />
     <entry file="file://$PROJECT_DIR$/922/t.sh" />
-    <entry file="file://$PROJECT_DIR$/1.txt" />
-    <entry file="file://$PROJECT_DIR$/c.sh" />
-    <entry file="file://$PROJECT_DIR$/a.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/a.sh" />
     <entry file="file://$PROJECT_DIR$/bak/remote_ctrl/create.sh" />
     <entry file="file://$PROJECT_DIR$/bak/code/join.sh" />
     <entry file="file://$PROJECT_DIR$/code/create.sh" />
     <entry file="file://$PROJECT_DIR$/code/join.sh" />
     <entry file="file://$PROJECT_DIR$/922/performance_test.sh" />
     <entry file="file://$PROJECT_DIR$/922/create.log" />
-    <entry file="file://$PROJECT_DIR$/922/concurrent.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/922/create_10000.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-47">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/922/join_10000.sh">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/922/concurrent.sh">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/211.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.sh" />
+    <entry file="file://$PROJECT_DIR$/bak/others/c.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bak/others/b.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>

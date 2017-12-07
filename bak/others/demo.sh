@@ -12,7 +12,7 @@ function demo(){
     for((i=0;i<num;i++))
     do
    {
-        ./create.sh 4
+        create.sh 4
        # ./create.sh 5
        # ./create.sh 6
        # ./create.sh 7
@@ -37,7 +37,7 @@ function main(){
     do
         read -u3
         {
-            ./hello.sh
+            hello.sh
 #            ./create.sh 4
 #            ./create.sh 5
 #            ./create.sh 6

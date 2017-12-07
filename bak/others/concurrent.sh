@@ -79,7 +79,7 @@ read -u3                           #代表从管道中读取一个令牌
 for((i=0;i<4;i++))
 do
         sleep 1
-        ./hello.sh
+        hello.sh
 
         echo >&3                   #代表我这一次命令执行到最后，把令牌放回管道
 done

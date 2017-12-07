@@ -64,7 +64,7 @@ starttime=`date`
 for((i=0;i<n;i++))
 do
 # ./create.sh | tee 1.txt| sleep 2 && exit
-./hello.sh && do_work
+hello.sh && do_work
 done
 
 #./create.sh $1 $2| tee 1.txt| ./killall.sh $1

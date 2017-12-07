@@ -1,7 +1,6 @@
 #!/usr/bin/expect  
 set timeout 5 
-spawn ssh root@112.33.14.21 -p 30022
+spawn ssh root@192.168.0.66
 expect "*password*"
-send "Yinshipin1234_\r"
+send "juphoon419708\r"
 interact
-
