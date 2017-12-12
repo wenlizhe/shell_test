@@ -1,0 +1,36 @@
+#!/bin/bash
+# chkconfig: - 85 15
+uwsgi=/opt/jusauto/env/bin/uwsgi
+prog=$(basename $nginx)
+pidfile="/var/run/${prog}.pid"
+sysconfig="/etc/sysconfig/$prog"
+lockfilr="/var/lock/subsys/uwsgi"
+jusauto_conf=/opt/jusauto/jusauto.ini
+
+case $1 in
+    start)
+        echo -n "Starting uWsgi"
+        nohup $uwsgi -i $jusauto_conf >/opt/jusauto/jusauto.log 2>&1 &
+        echo " done"
+    ;;
+
+    stop)
+        echo -n "Stopping uWsgi"
+        ps -efww|grep -w uwsgi|grep -v grep|cut -c 9-15|xargs kill -9|echo done
+    ;;
+
+    reload)
+        $0 stop
+        $0 start
+    ;;
+
+    show)
+        ps -ef| grep uwsgi |grep -v grep
+    ;;
+
+    *)
+        echo -n "Usage: $0 {start|reload|stop|show}"
+    ;;
+
+esac
+

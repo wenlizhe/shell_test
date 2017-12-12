@@ -1,0 +1,39 @@
+# !/bin/bash
+### BEGIN INIT INFO
+# Provides:          bbzhh.com
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: tomcat service
+# Description:       tomcat service daemon
+### END INIT INFO
+# chkconfig: 2345 85 15  
+# description: ydeyes for tencent cloud  service
+# processname: YDService
+myPath="/usr/local/qcloud"
+case "$1" in
+start)
+echo "Starting YDServer..."
+$myPath/YunJing/YDEyes/YDService&
+$myPath/YunJing/YDLive/YDLive&
+;;
+stop)
+echo "Stopping YDServer..."
+pkill -9 YDService
+pkill -9 YDLive
+pkill -9 YDService
+;;
+restart)
+pkill -9 YDService
+pkill -9 YDLive
+pkill -9 YDService
+$myPath/YunJing/YDEyes/YDService&
+$myPath/YunJing/YDLive/YDLive&
+;;
+*)
+echo "Usage: $0 {start|stop|restart}"
+exit 1
+;;
+esac
+exit 0
