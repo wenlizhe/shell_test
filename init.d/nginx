@@ -48,7 +48,7 @@ stop() {
     retval=$?
     echo
     [ $retval -eq 0 ] && rm -f $lockfile
-    return $retval
+    return $retval2
 }
 
 restart() {

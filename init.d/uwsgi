@@ -1,36 +1,84 @@
 #!/bin/bash
-# chkconfig: - 85 15
+#
+# uwsgi - this script starts and stops the uwsgi daemon
+#
+# chkconfig:   - 85 15
+# processname: uwsgi
+# config:      /opt/jusauto/jusauto.ini
+# config:      /etc/sysconfig/uwsgi
+# pidfile:     /var/run/uwsgi.pid
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+# Check that networking is up.
+[ "$NETWORKING" = "no" ] && exit 0
+
 uwsgi=/opt/jusauto/env/bin/uwsgi
-prog=$(basename $nginx)
-pidfile="/var/run/${prog}.pid"
-sysconfig="/etc/sysconfig/$prog"
-lockfilr="/var/lock/subsys/uwsgi"
+prog=$(basename $uwsgi)
+
+pidfile=/var/run/jusauto.pid
+# sysconfig="/etc/sysconfig/$prog"
+# lockfilr="/var/lock/subsys/uwsgi"
 jusauto_conf=/opt/jusauto/jusauto.ini
 
-case $1 in
+
+start() {
+    $uwsgi -i $jusauto_conf >/opt/jusauto/jusauto.log 2>&1 &
+    echo -e $"Startting $prog: \033[32m OK \033[0m"
+}
+
+stop() {
+    # killproc -p $pidfile $prog
+    # retval=$?
+    # echo
+    # [ $retval -eq 0 ] && rm -f $lockfile
+    # return $retval2
+    # ps -efww|grep -w uwsgi|grep -v grep|cut -c 9-15|xargs kill -9|echo -e $"Stopping $prog: \033[32m OK \033[0m"
+    $uwsgi --stop $pidfile
+    # rm -f $PIDFILE
+    echo -e $"Stopping $prog: \033[32m OK \033[0m"
+}
+
+reload() {
+    rh_status_q || return 6
+    stop
+    start
+}
+
+rh_status() {
+    status $prog
+}
+
+rh_status_q() {
+    rh_status >/dev/null 2>&1
+}
+
+case "$1" in
     start)
-        echo -n "Starting uWsgi"
-        nohup $uwsgi -i $jusauto_conf >/opt/jusauto/jusauto.log 2>&1 &
-        echo " done"
-    ;;
+        rh_status_q && exit 0
+        $1
+        ;;
 
     stop)
-        echo -n "Stopping uWsgi"
-        ps -efww|grep -w uwsgi|grep -v grep|cut -c 9-15|xargs kill -9|echo done
-    ;;
+        # rh_status_q && exit 0
+        $1
+        ;;
 
     reload)
-        $0 stop
-        $0 start
-    ;;
+        rh_status_q || exit 7
+        $1
+        ;;
 
-    show)
-        ps -ef| grep uwsgi |grep -v grep
-    ;;
+    status)
+        rh_status
+        ;;
 
     *)
-        echo -n "Usage: $0 {start|reload|stop|show}"
-    ;;
-
+        echo -n "Usage: $0 {start|reload|stop|status}"
+        exit 2
 esac
 
