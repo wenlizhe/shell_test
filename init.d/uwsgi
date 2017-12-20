@@ -81,4 +81,3 @@ case "$1" in
         echo -n "Usage: $0 {start|reload|stop|status}"
         exit 2
 esac
-
