@@ -2,7 +2,7 @@
 
 WORK_DIR=../test_dir/
 # 随机字符串
-#prefix=`cat /dev/urandom | tr -dc 'a-z' | head -c 10`
+#prefix=`cat /dev/urandom | head -n 10 | head -c 10`
 
 #使用for循环在/oldboy目录下通过随机小写10个字母加固定字符串oldboy批量创建10个html文件
 function create_file(){
