@@ -12,7 +12,7 @@ function create_user() {
     i=1
     while((i<$user_num))
     do
-        echo `useradd $username$i -p passwd`
+        echo `useradd $username$i -p $passwd`
         i=$(($i+1))
     done
 }
@@ -25,7 +25,6 @@ function del_user() {
         rm -rf /home/$username$i
         i=$(($i+1))
     done
-
 }
 
 function main(){

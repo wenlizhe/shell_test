@@ -30,7 +30,6 @@ function test3(){
 # 4、在题3的基础上使用awk取passwd文件的第10行到20行的第三列重定向到/tmp/oldboy/test.txt文件里。
 function test4(){
     cat ./test/passwd| tail -n +10|head -n 10| awk '{print $3}' >> ./test/test.txt
-    # echo $a
 }
 
 # 5、在题3的基础上要求用命令rm删除文件时提示如下禁止使用rm的提示，并使该效果永久生效。
@@ -92,8 +91,16 @@ function test10(){
 }
 
 # 请使用sed和awk写出一个批量更改文件名的命令，例如将rce开头文件修改为rbe开头文件
+function test11(){
+    # 正则表达式遇到\ $ * + ( )等符号，需要进行转义
+    ls rce* | sed 's/rce\(.*\)/rce\1 rbe\1/g' | awk '{cmd="mv "$1 " "$2;system(cmd);}'
+}
 
 # 请写出一个删除当前及子目录中“.tmp”文件的命令
+function test12(){
+    find ./ -name "*.tmp" -exec rm {} \;
+}
+
 
 function main(){
     test9

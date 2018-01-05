@@ -7,13 +7,10 @@ a='I am oldboy teacher welcome to oldboy training class.'
 
 for i in $a
 do
-    #Usage1
-#    num=`echo $i| wc -L`
-    #Usage2
+
     num=${#i}
     if [ $num -le 6 ]
     then
         echo $i
     fi
-
 done
