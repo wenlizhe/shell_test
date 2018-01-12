@@ -21,8 +21,4 @@ cpu_num=`grep -c 'model name' /proc/cpuinfo`
 #抓取当前系统15分钟的平均负载值
 load_15=`uptime | awk '{print $NF}'`
 
-#取上面平均负载值的个位整数
-average_int=`echo $average_load | cut -f 1 -d "."`
 
-#设置系统单个核心15分钟的平均负载的告警值为0.70(即使用超过70%的时候告警)。
-load_warn=0.70
